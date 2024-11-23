@@ -85,7 +85,7 @@ class ConcreteDropout(nn.Module):
             regularization = dropout_reg + weight_reg
             self._regularization = regularization
         else:
-            output = x * retain_prob
+            output = x
 
         return output
 
